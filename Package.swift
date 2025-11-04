@@ -24,7 +24,7 @@ let package = Package(
     dependencies: [],
     targets: [
         .binaryTarget(
-            name: "SDWebImage",
+            name: "SDWebImage-IDN",
             url: "https://github.com/SDWebImage/SDWebImage/releases/download/5.21.3/SDWebImage-dynamic.xcframework.zip",
             checksum: "1a5e635fa4f9525c91631928dd54e9dd3117ec02b9c9757d4e36ab5d06600aef"
         ),
@@ -51,7 +51,7 @@ let package = Package(
             name: "CleverTapSDKWrapper",
             dependencies: [
                 "CleverTapSDK",
-                "SDWebImage"
+                "SDWebImage-IDN"
             ],
             path: "CleverTapSDKWrapper",
             linkerSettings: [
